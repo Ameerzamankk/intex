@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bridal dress bank</title>
+    <link rel="icon" href="image\logo.gif" type="image/gif" sizes="16x16">
+    
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topnav" style="position: fixed; width: 100%; z-index:1"; id="myTopnav">
+		
+		
+		<img class="logo" src="images/BARA35.png" alt="logo" class="src">
+	     
+					
+				 <a href="#news">Gallery</a>
+				 <a href="#contact">Donate</a>
+				 <a href="#about">Contact</a>
+				 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				   <i class="fa fa-bars"></i>
+				 </a>
+				
+				   <script>
+					 function myFunction() {
+					   var x = document.getElementById("myTopnav");
+					   if (x.className === "topnav") {
+						 x.className += " responsive";
+					   } else {
+						 x.className = "topnav";
+					   }
+					 }
+					 </script>
+		  
+	   
+</header>
+<section>
+	<div style="padding-top:3cm;">
+	<div class="container" style="padding-bottom: 2cm;">
+	
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					
+					<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/coL2.jpg" style="width:100%">
+	  
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/coL1.jpg" style="width:100%">
+	  
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/coL9.jpg" style="width:100%">
+	  
+	</div>
+	
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <h5 style="text-align: center; padding-top: 1cm;" >lahanga</h6>
+	<p style="text-align: center;">color: Ash</p>
+</div>
+
+  <script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+					  
+					  <form id="submit-form" action="">
+					<h3>Register</h3>
+					
+					<div class="form-holder ">
+						<input type="text" id="adress" name="Name" placeholder="your name" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="contact" id="contact" name="contact" placeholder="contact number" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="text" id="adress" name="adress" placeholder="adress" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="form-holder">
+						<input type="text" id="place" name="place" placeholder="place" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="form-holder">
+						<h4>Funtion date</h4>
+						<input type="date" id="date" name="funtion date"placeholder="date" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="form-holder">
+						<h4>Pickup date</h4>
+						<input type="date" id="date" name="pickup date" placeholder="date" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="form-holder">
+						<h4>Return date</h4>
+						<input type="date" id="date" name="return date" placeholder="date" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="checkbox">
+						
+					</div>
+					<div class="form-login">
+						<button>Submit</button>
+					
+					
+
+
+
+					</div>
+				</form>
+				
+			</div> 
+		</div>
+	</div>
+</div>
+</div>
+</section>
+	<!-- This templates was made by Colorlib (https://colorlib.com) -->
+	<footer >
+		<div class="row; FOOT" >
+			<div class="col-md-12 text-center text-white">
+	
+			<i class="far fa-copyright"></i><p> copyright</p>
+			
+			<i class="fab fa-facebook-square"></i>
+			<i class="fab fa-whatsapp"></i>
+			<i class="fab fa-instagram"></i>
+			
+		</div>
+		</div>
+	  </div>
+	</footer>
+	<script>
+		$("#submit-form").submit((e)=>{
+			e.preventDefault()
+			$.ajax({
+				url:"https://script.google.com/macros/s/AKfycbzwZJQomzcxaMT2y_Ws4ankUtaMYHBXuhtLPylNSA/exec",
+				data:$("#submit-form").serialize(),
+				method:"post",
+				success:function (response){
+					alert("Your Booking successfully")
+					window.location.reload()
+					//window.location.href="https://google.com"
+				},
+				error:function (err){
+					alert("Something Error")
+	
+				}
+			})
+		})
+	</script>
+	  
+	  
+		  
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	  <script src="https://kit.fontawesome.com/bef4def96a.js" crossorigin="anonymous"></script>
+	  
+	</body>
+	  </html>
+</html>
